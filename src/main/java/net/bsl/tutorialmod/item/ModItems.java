@@ -1,6 +1,8 @@
 package net.bsl.tutorialmod.item;
 
 import net.bsl.tutorialmod.bslExp;
+import net.bsl.tutorialmod.item.custom.LightningSummon;
+import net.bsl.tutorialmod.item.custom.MetalDectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +18,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> LIGHTNING_STAFF = ITEMS.register("lightning_staff",
+            () -> new LightningSummon(new Item.Properties().durability(100)));
+
 
 
 

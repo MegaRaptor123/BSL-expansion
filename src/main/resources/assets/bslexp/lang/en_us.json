@@ -1,4 +1,12 @@
 {
   "item.bslexp.ruby": "Ruby",
-  "item.bslexp.raw_ruby": "Raw Ruby"
+  "item.bslexp.raw_ruby": "Raw Ruby",
+  "item.bslexp.metal_detector": "Metal Detector",
+  "item.bslexp.lightning_staff": "Lightning Staff",
+
+  "block.bslexp.ruby_block": "Block of Ruby",
+  "block.bslexp.ruby_ore_block": "Ruby Ore",
+
+  "creativetab.bslexp_tab": "BSL's Expansion Tab"
+
 }

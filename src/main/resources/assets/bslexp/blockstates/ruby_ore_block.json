@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bslexp:block/ruby_ore_block"
+    }
+  }
+}

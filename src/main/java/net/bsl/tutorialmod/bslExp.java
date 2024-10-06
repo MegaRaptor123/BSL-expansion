@@ -1,6 +1,8 @@
 package net.bsl.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.bsl.tutorialmod.block.ModBlocks;
+import net.bsl.tutorialmod.item.ModCreativeModTabs;
 import net.bsl.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,12 +25,20 @@ public class bslExp
     public static final String MOD_ID = "bslexp";
     public static final Logger LOGGER = LogUtils.getLogger();
 
+
+
+
+
+
+
     public bslExp(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register((modEventBus));
         modEventBus.addListener(this::commonSetup);
 
 
@@ -39,6 +49,13 @@ public class bslExp
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         // context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
+
+
+
+
+
+
+
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {

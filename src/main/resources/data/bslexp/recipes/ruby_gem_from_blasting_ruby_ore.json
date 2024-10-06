@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ruby",
+  "ingredient": {
+    "item": "bslexp:ruby_ore_block"
+  },
+  "result": "bslexp:ruby"
+}
